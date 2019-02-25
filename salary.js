@@ -48,7 +48,6 @@ function validPopup() {
     }
     var submitForm = function(){
         var form = document.querySelector('form')
-        console.log(form)
         form.submit()
     }
     var generateCloseBtn = function (popup) {
@@ -72,8 +71,6 @@ function validPopup() {
         var x = document.getElementById('card').value;
         var x1 = document.getElementById('card1').value;
         var x2 = document.getElementById('card2').value;
-        console.log(x)
-        console.log(x1.length )
         if (x == "" || x.length < 19 || x1 == "" || x1.length < 5 || x2 == "" || x2.length < 3 ) {
           return false;
         } else {
