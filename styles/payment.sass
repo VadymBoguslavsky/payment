@@ -1,0 +1,122 @@
+@font-face 
+  font-family: "HelveticaNeueBold"
+  src: url(../HelveticaNeueBold.ttf)
+
+
+.payment 
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    max-width: 450px
+    box-sizing: border-box
+    &__top 
+        display: flex
+        flex-direction: column
+        background-color: #f9f9f9
+        margin-top: 40px
+        padding: 28.5px 50px
+        border: 1px solid #f1f1f1
+        box-sizing: border-box
+        width: 100%
+        &__title 
+            display: flex
+            justify-content: space-between
+            margin-bottom: 18px
+            &--text 
+                color: #7b6d62
+                text-transform: uppercase
+                font-weight: bold
+                margin: 0
+                padding: 0
+            &--img
+                height: 18px
+                display: flex
+                align-items: center
+        &__text 
+            margin-bottom: 15px
+            font-size: 12px
+            color: #babfc3
+        &__rates
+            display: flex
+            justify-content: space-between
+            &--left 
+                font-size: 12px
+                color: #8e99a4
+            &--right 
+                font-size: 13px
+                text-transform: uppercase
+                color: #34bd50
+                font-weight: bold
+                font-family: "HelveticaNeueBold"
+    &__bottom 
+        display: flex
+        flex-direction: column
+        background-color: #fffffd
+        padding: 28.5px 50px
+        border: 1px solid #f1f1f1
+        & input.invalid
+            border-color: red;
+        & input:valid
+            border-color: #00be98;
+        &__text 
+            font-size: 12px
+            color: #737a86
+            font-weight: bold
+        &__card 
+            padding: 10px 7px
+            background: url(../../img/card.png) no-repeat 96% center
+        &__info 
+            display: flex
+            padding-top: 10px
+            justify-content: space-around
+            &--card 
+                padding: 10px 7px
+                width: 102px
+                &-background
+                  padding: 10px 7px
+                  width: 102px
+                  background: url(../../img/card.png) no-repeat 96% center
+            &--cvv 
+                margin: 0px 27px
+                max-width: 114px
+            &--text 
+                align-self: flex-end
+                color: #737a86
+                font-size: 11px
+                padding: 0
+                max-width: 98px
+            &--bitme
+                max-width: 114px
+        &__button 
+            margin-top: 15px
+            background-color: #0091ff
+            padding: 10px
+            color: white
+            border: none
+            border-radius: 5px
+            outline: none
+            width: 100%
+            cursor: pointer
+    &__icon 
+        padding: 10px
+        box-sizing: border-box
+        display: flex
+        align-items: center
+        justify-content: center
+        &__img 
+            margin-left: 15px
+
+
+@media (min-width: 320px) and (max-width: 449px)
+     .payment
+        &__top
+            padding: 28.5px 20px
+        &__bottom
+            padding: 28.5px 20px
+            &__info
+                &--bitme
+                    max-width: 95px
+                &--cvv
+                    max-width: 95px 
+                    margin: 0 10px
